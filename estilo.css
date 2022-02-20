@@ -1,0 +1,139 @@
+/*tamaño pag*/
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+
+/*imagen*/
+
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.logo{
+    height: 40px;
+}
+
+
+
+/*nav*/
+
+nav{
+    background: cadetblue;
+    height: 80px;
+    width: 100%;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: cornsilk;
+    font-size: 18px;
+    padding: 7px 13px;
+    border: 3px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+li a.active, li a:hover{
+    background: cyan;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size:30px;
+    color: rgb(238, 238, 238);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+cursor: pointer;
+   
+   
+
+}
+#check{
+    display: none;
+}
+
+section{
+    background: url(philip.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+}
+
+@media (max-width: 952px) {
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn{
+        display: block;
+    }
+
+
+ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 6, 7);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+}
+
+nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+
+}
+
+
+nav ul li a{
+    font-size: 20px;
+}
+
+li a:hover, li a.active{
+    background: none;
+    color: whitesmoke;
+
+}
+
+
+#check:checked ~ ul{
+    left: 0;
+}
+
+}
+
+.checkbtn{
+    width: 50px;
+    right: 50px;
+    float:right;
+    margin: 14px;
+}
